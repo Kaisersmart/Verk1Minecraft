@@ -15,6 +15,10 @@ app.get("/", (req, res) => {
   res.render("index", { title: "Mobs Minecraft" });
 });
 
+app.get("/about",(req,res) =>{
+  res.render("about", { title: "Abaut Mobs"});
+})
+
 app.listen(PORT, ()=>{
     console.log(`Server kyrir á http://localhost:${PORT}`);
 })
